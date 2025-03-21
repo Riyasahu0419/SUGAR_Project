@@ -40,6 +40,14 @@ const Homepage = () => {
     return () => clearInterval(interval);
   }, [dealItem.length]);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      SetPrice((prevDeal) => (prevDeal + 1) % priceItem.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [priceItem.length]);
+
   
   // Current carousel index
   
