@@ -152,7 +152,7 @@ const NewLaunches = () => {
               setActiveTab('newLaunches');
               setShowAllContent(false);
             }}
-            className={`px-4 py-2 font-medium text-lg ${activeTab === 'newLaunches' && !showAllContent ? 'border-b-2 border-black' : ''}`}
+            className={`px-4 py-2 font-medium text-2xl ${activeTab === 'newLaunches' && !showAllContent ? 'border-b-2 border-black' : ''}`}
           >
             NEW LAUNCHES
           </button>
@@ -161,7 +161,7 @@ const NewLaunches = () => {
               setActiveTab('bestsellers');
               setShowAllContent(false);
             }}
-            className={`px-4 py-2 font-medium text-lg ${activeTab === 'bestsellers' && !showAllContent ? 'border-b-2 border-black' : ''}`}
+            className={`px-4 py-2 font-medium text-2xl ${activeTab === 'bestsellers' && !showAllContent ? 'border-b-2 border-black' : ''}`}
           >
             BESTSELLERS
           </button>

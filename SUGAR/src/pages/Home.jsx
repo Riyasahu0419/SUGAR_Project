@@ -240,7 +240,7 @@ const Homepage = () => {
   {/* Newsletter */}
   <section className="py-12 bg-gray-100 mb-8">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl font-bold mb-2">Join the SUGAR Family</h2>
+            <h2 className="text-xl sm:text-2xl font-medium text-center tracking-widest">Join the SUGAR Family</h2>
             <p className="mb-6 text-gray-600">Sign up for updates on new launches and exclusive offers</p>
             <form onSubmit={handleNewsletterSubmit} className="max-w-md mx-auto">
               <div className="flex">

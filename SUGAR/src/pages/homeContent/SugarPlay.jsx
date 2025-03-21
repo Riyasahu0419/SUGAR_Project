@@ -55,7 +55,7 @@ const SugarPlay = () => {
 
   return (
     <div className="flex flex-col p-4">
-      <h1 className="text-3xl font-bold tracking-widest text-center my-8">SUGAR PLAY RANGE</h1>
+      <h1 className="text-xl sm:text-2xl font-medium text-center tracking-widest mb-8 mt-8">SUGAR PLAY RANGE</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
         {products.map((product) => (

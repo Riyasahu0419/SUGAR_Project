@@ -124,13 +124,13 @@ const EliteEdition = () => {
       {/* Categories */}
       <div className="flex justify-center space-x-8 mb-12">
         <div 
-          className={`pb-2 text-lg font-medium cursor-pointer ${activeCategory === 'ELITE EDITION' ? 'border-b-2 border-black' : 'text-gray-500'}`}
+          className={`pb-2 text-2xl font-medium cursor-pointer ${activeCategory === 'ELITE EDITION' ? 'border-b-2 border-black' : 'text-gray-500'}`}
           onClick={() => handleCategoryClick('ELITE EDITION')}
         >
           ELITE EDITION
         </div>
         <div 
-          className={`pb-2 text-lg font-medium cursor-pointer ${activeCategory === 'ON-THE-GO ESSENTIALS' ? 'border-b-2 border-black' : 'text-gray-500'}`}
+          className={`pb-2 text-2xl font-medium cursor-pointer ${activeCategory === 'ON-THE-GO ESSENTIALS' ? 'border-b-2 border-black' : 'text-gray-500'}`}
           onClick={() => handleCategoryClick('ON-THE-GO ESSENTIALS')}
         >
           ON-THE-GO ESSENTIALS

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Search, ShoppingBag, User, Menu, X } from 'lucide-react';
+import SearchBar from '../pages/SearchBar';
+import WhatsappLogin from '../pages/WhatsappLogin';
 
 const Link = ({ to, children, className }) => (
   <a href={to} className={className}>
@@ -129,13 +131,13 @@ const Navbar = () => {
         {/* Action buttons */}
         <div className="flex items-center space-x-4">
           <button className="text-gray-800 hover:text-pink-500 transition duration-200">
-            <Search size={20} />
+            <SearchBar/>
           </button>
-          <Link to="/wishlist" className="text-gray-800 hover:text-pink-500 transition duration-200">
-            <User size={20} />
+          <Link  className="text-gray-800 hover:text-pink-500 transition duration-200">
+            <WhatsappLogin/>
           </Link>
           <Link to="/cart" className="text-gray-800 hover:text-pink-500 transition duration-200">
-            <ShoppingBag size={20} />
+            <ShoppingBag size={25} />
           </Link>
         </div>
       </div>
