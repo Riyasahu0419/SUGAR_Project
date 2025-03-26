@@ -55,7 +55,7 @@ const WhatsappLogin = () => {
       await response.json();
       alert("OTP sent successfully!");
       setIsOtpSent(true);
-      setTimer(30);
+      setTimer(50);
       setIsResendDisabled(true);
     } catch (err) {
       console.log("❌ Error sending OTP:", err);
@@ -113,24 +113,43 @@ const WhatsappLogin = () => {
       {isOpen && (
         <div className="fixed inset-0 bg-opacity-50 flex items-center justify-center z-50">
           <div className="relative bg-white rounded-lg max-w-lg w-full p-6 shadow-lg">
-            <button onClick={closeModal} className="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+            <button onClick={closeModal} className="absolute top-0 right-4 text-white-500 hover:text-gray-700 cursor-pointer">
               <X size={28} />
             </button>
 
             {!isOtpSent ? (
               <>
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4">Enter Phone Number</h2>
-                <input
-                  type="text"
-                  placeholder="Phone number"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  className="w-full border border-gray-300 rounded-md p-3 text-lg mb-2"
-                />
-                {error && <p className="text-red-500 text-sm mb-2">{error}</p>}
-                <button onClick={sendOtp} className="w-full bg-green-500 text-white rounded-md p-3 mt-2">
-                  Send OTP
-                </button>
+              
+          <div className="relative h-48 bg-gradient-to-r from-pink-400 to-purple-400 flex items-center justify-center">
+          <div className="text-center z-10">
+            <h1 className="text-4xl font-bold text-white tracking-wide">SUGAR</h1>
+            <p className="text-white mt-2 text-lg font-light">Rule the world, one look at a time ;)</p>
+          </div>
+        </div>
+        
+        <div className="p-6">
+        <div className="mb-4">
+            <label htmlFor="phone" className="block text-gray-700 font-semibold mb-2">
+              Phone Number
+            </label>
+            <input 
+              id="phone"
+              type="tel" 
+              placeholder="Enter your phone number" 
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition duration-300"
+            />
+          </div>
+            {error && <p className="text-red-500 text-sm mb-2">{error}</p>}
+            <button 
+            onClick={sendOtp}
+            className="w-full flex items-center justify-center bg-pink-400 text-white py-3 rounded-lg hover:bg-purple-400 transition duration-300 space-x-2 cursor-pointer"
+          >
+
+            WhatsApp Login
+          </button>
+          </div>
               </>
             ) : (
               <>
@@ -145,12 +164,12 @@ const WhatsappLogin = () => {
                 />
                 <p className="text-gray-600 text-sm mb-2">OTP expires in: {timer}s</p>
                 {error && <p className="text-red-500 text-sm mb-2">{error}</p>}
-                <button onClick={verifyOtp} className="w-full bg-blue-500 text-white rounded-md p-3 mt-2">
+                <button onClick={verifyOtp} className="w-full bg-blue-500 text-white rounded-md p-3 mt-2 cursor-pointer">
                   Verify OTP
                 </button>
                 <button
                   onClick={sendOtp}
-                  className={`w-full bg-gray-400 text-white rounded-md p-3 mt-2 ${isResendDisabled ? "opacity-50 cursor-not-allowed" : "bg-green-500 hover:bg-green-600"}`}
+                  className={`w-full bg-gray-400 text-white rounded-md p-3 mt-2 ${isResendDisabled ? "opacity-50 cursor-not-allowed" : "bg-pink-400 hover:bg-purple-400 cursor-pointer"}`}
                   disabled={isResendDisabled}
                 >
                   Resend OTP

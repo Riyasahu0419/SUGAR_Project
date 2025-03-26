@@ -8,7 +8,7 @@ import Carousel from './homeContent/Carousel';
 
 const Homepage = () => {
   
-
+  
   const [deal,SetDeal]= useState(0)
   const [price,SetPrice]= useState(0)
   const [email, setEmail] = useState('');
@@ -81,7 +81,7 @@ const Homepage = () => {
         
      {/* NewLaunches content */}
 
-            <NewLaunches/>
+      <NewLaunches/>
 
         {/* Featured Banner  DealItem*/}
         <header className="py-8 border-b border-gray-200">

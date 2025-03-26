@@ -31,7 +31,7 @@ const SugarInsta = () => {
       title: "Beauty Tutorial", 
       author: "Sarah", 
       price: "₹799.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Ace-of-Face-Dewy-Foundation.jpg?v=1741431610" 
     },
     { 
       id: 2, 
@@ -39,7 +39,7 @@ const SugarInsta = () => {
       title: "Blue Outfit", 
       author: "Jessica", 
       price: "₹999.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Ace-of-Face-Dewy-Foundation.jpg?v=1741431610" 
     },
     { 
       id: 3, 
@@ -47,7 +47,7 @@ const SugarInsta = () => {
       title: "Orange & Blue Style", 
       author: "Priya", 
       price: "₹899.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Ace-of-Face-Dewy-Foundation.jpg?v=1741431610" 
     },
     { 
       id: 4, 
@@ -55,7 +55,7 @@ const SugarInsta = () => {
       title: "Casual Look", 
       author: "Amber", 
       price: "₹1,299.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Ace-of-Face-Dewy-Foundation.jpg?v=1741431610" 
     },
     { 
       id: 5, 
@@ -63,7 +63,7 @@ const SugarInsta = () => {
       title: "Bag Collection", 
       author: "Tina", 
       price: "₹1,499.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Ace-of-Face-Dewy-Foundation.jpg?v=1741431610" 
     },
     { 
       id: 6, 
@@ -71,7 +71,7 @@ const SugarInsta = () => {
       title: "Workout Outfit", 
       author: "Michelle", 
       price: "₹1,199.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Cloud-Nine-Niacinamide-Glow-Blush_5ad87314.jpg?v=1739962281" 
     },
     { 
       id: 7, 
@@ -79,7 +79,7 @@ const SugarInsta = () => {
       title: "Athleisure Look", 
       author: "Michelle", 
       price: "₹1,399.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Glide-Peptide-SPF50-PA-Lip-Treatment.jpg?v=1739962227" 
     },
     { 
       id: 8, 
@@ -87,7 +87,7 @@ const SugarInsta = () => {
       title: "Summer Vibes", 
       author: "Michelle", 
       price: "₹999.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Cloud-Nine-Niacinamide-Glow-Blush_5ad87314.jpg?v=1739962281" 
     },
     { 
       id: 9, 
@@ -95,7 +95,7 @@ const SugarInsta = () => {
       title: "Urban Streetwear", 
       author: "Michelle", 
       price: "₹1,599.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Glide-Peptide-Serum-Lipstick_ccc7f150.png?v=1739962163" 
     },
     { 
       id: 10, 
@@ -103,7 +103,7 @@ const SugarInsta = () => {
       title: "Minimalist Style", 
       author: "Michelle", 
       price: "₹899.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/SUGAR-Drop-A-Tint-Lip-Oil.jpg?v=1739962134" 
     },
     { 
       id: 11, 
@@ -111,7 +111,7 @@ const SugarInsta = () => {
       title: "Chic Evening Look", 
       author: "Michelle", 
       price: "₹1,799.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Partner-In-Shine-Transferproof-Lip-Gloss_fb205db2.jpg?v=1739961985" 
     },
     { 
       id: 12, 
@@ -119,7 +119,7 @@ const SugarInsta = () => {
       title: "Activewear Fit", 
       author: "Michelle", 
       price: "₹1,299.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Partner-In-Shine-Transferproof-Lip-Gloss_68c166aa-279e-42f5-a81a-37c6286d3fc6.jpg?v=1736171777" 
     },
     { 
       id: 13, 
@@ -127,7 +127,7 @@ const SugarInsta = () => {
       title: "Activewear Fit", 
       author: "Michelle", 
       price: "₹1,299.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Cloud-Nine-Niacinamide-Glow-Blush_098eecac-3d2d-4b41-b37e-a1cf2883ab88.jpg?v=1736248002" 
     },
     { 
       id: 14, 
@@ -135,7 +135,7 @@ const SugarInsta = () => {
       title: "Activewear Fit", 
       author: "Michelle", 
       price: "₹1,299.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/SUGAR-Drop-A-Tint-Lip-Oil.jpg?v=1739962134" 
     },
     { 
       id: 15, 
@@ -143,7 +143,7 @@ const SugarInsta = () => {
       title: "Activewear Fit", 
       author: "Michelle", 
       price: "₹1,299.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/SUGAR-Drop-A-Tint-Lip-Oil.jpg?v=1736421552" 
     },
     { 
       id: 16, 
@@ -151,7 +151,7 @@ const SugarInsta = () => {
       title: "Activewear Fit", 
       author: "Michelle", 
       price: "₹1,299.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Bold-Unfold-Waterproof-Mascara.jpg?v=1736172313" 
     },
     { 
       id: 17, 
@@ -159,7 +159,7 @@ const SugarInsta = () => {
       title: "Activewear Fit", 
       author: "Michelle", 
       price: "₹1,299.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Cloud-Nine-Niacinamide-Glow-Blush_098eecac-3d2d-4b41-b37e-a1cf2883ab88.jpg?v=1736248002" 
     },
     { 
       id: 18, 
@@ -167,7 +167,7 @@ const SugarInsta = () => {
       title: "Activewear Fit", 
       author: "Michelle", 
       price: "₹1,299.00", 
-      productImage: "https://via.placeholder.com/150" 
+      productImage: "https://cdn.shopify.com/s/files/1/0906/2558/files/Glide-Peptide-SPF50-PA-Lip-Treatment.jpg?v=1739962227" 
     }
   ];
 
