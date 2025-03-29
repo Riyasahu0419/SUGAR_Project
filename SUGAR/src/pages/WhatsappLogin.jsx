@@ -482,7 +482,7 @@ const WhatsappLogin = () => {
                   />
                   {error && <p className="text-red-500 text-sm mb-2">{error}</p>}
                   <button onClick={sendOtp} className="w-full bg-pink-400 text-white py-3 rounded-lg hover:bg-purple-400 mt-4 cursor-pointer">
-                    WhatsApp Login
+                    Login
                   </button>
                 </div>
               </>
