@@ -248,16 +248,12 @@ const WhatsappLogin = () => {
   };
 
   const verifyOtp = async () => {
-    if (!otp || otp.length !== 6) {
-      setError("Enter a valid 6-digit OTP");
-      return;
-    }
+    // if (!otp || otp.length !== 6) {
+    //   setError("Enter a valid 6-digit OTP");
+    //   return;
+    // }
     
-    if (!phoneNumber) {
-      setError("Phone number is missing. Try resending OTP.");
-      return;
-    }
-    
+     
     try {
       const response = await fetch("https://sugar-project.onrender.com/auth/verify-otp", {
         method: "POST",
