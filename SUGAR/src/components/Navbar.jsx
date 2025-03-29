@@ -9,6 +9,20 @@ const Link = ({ to, children, className }) => (
   </a>
 );
 
+
+const navItems = [
+  { name: "NEW", path: "/new" },
+  { name: "LIPS", path: "/lip" },
+  { name: "EYES", path: "/eye" },
+  { name: "FACE", path: "/FP" },
+  { name: "NAILS", path: "/nail" },
+  { name: "SKIN", path: "/skin" },
+  { name: "OFFERS", path: "/offers" },
+  { name: "GIFTING", path: "/gift" },
+  { name: "SUGAR POP", path: "/sugar-pop" },
+  { name: "SUGAR PLAY", path: "/play" },
+];
+
 const promotions = [
   "TREAT10 AND ENJOY 10% OFF ON ALL ORDERS",
   "FREE SHIPPING ON ORDERS ABOVE $50",
@@ -117,17 +131,18 @@ const Navbar = () => {
 
         {/* Main navigation */}
         <nav className="hidden lg:flex items-center space-x-6">
-          {["NEW", "LIPS", "EYES", "FACE", "NAILS", "SKIN", "OFFERS", "GIFTING", "SUGAR POP", "SUGAR PLAY"].map((item) => (
-            <Link
-              key={item}
-              to={`/${item.toLowerCase().replace(" ", "-")}`}
-              className="text-sm font-medium text-gray-800 hover:text-pink-500 hover:underline transition duration-200"
-            >
-              {item}
-            </Link>
-          ))}
-        </nav>
+      {navItems.map((item) => (
+        <Link
+          key={item.name}
+          to={item.path}
+          className="text-sm font-medium text-gray-800 hover:text-pink-500 hover:underline transition duration-200"
+        >
+          {item.name}
+        </Link>
+      ))}
+    </nav>
 
+    
         {/* Action buttons */}
         <div className="flex items-center space-x-4">
           <button className="text-gray-800 hover:text-pink-500 transition duration-200">

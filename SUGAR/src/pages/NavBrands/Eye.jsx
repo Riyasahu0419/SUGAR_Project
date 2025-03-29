@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Eye, ChevronDown, X } from 'lucide-react';
 import axios from 'axios';
 
-const NewProduct = () => {
+const EyeProduct = () => {
+
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -12,7 +13,7 @@ const NewProduct = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:5000/new/newproduct');
+        const response = await fetch('http://localhost:5000/api/eye/Eye');
         if (!response.ok) throw new Error('Failed to fetch products');
         const data = await response.json();
 
@@ -170,8 +171,8 @@ const NewProduct = () => {
     </div>
   );
 };
-export default NewProduct;
 
+export default EyeProduct;
 
 
 

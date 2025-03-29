@@ -4,32 +4,47 @@ import axios from 'axios';
 function AddCart() {
   const [cartItems, setCartItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
+  // Fetch cart items whenever the component mounts
   useEffect(() => {
-    // Fetch cart items from the backend
-    const fetchCartItems = async () => {
-      try {
-        setIsLoading(true);
-        const response = await axios.get('/api/cart');
-        const data = Array.isArray(response.data) ? response.data : []; // Ensure it's an array
-        setCartItems(data);
-      } catch (error) {
-        console.error('Error fetching cart items:', error);
-        setCartItems([]); // Fallback to empty array
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
     fetchCartItems();
   }, []);
 
+  // Function to fetch cart items
+  const fetchCartItems = async () => {
+    try {
+      setIsLoading(true);
+      const response = await axios.get('http://localhost:5000/api/cart');
+      const data = Array.isArray(response.data) ? response.data : [];
+      setCartItems(data);
+      setError(null);
+    } catch (error) {
+      console.error('Error fetching cart items:', error);
+      setError('Failed to load cart items. Please try again later.');
+      setCartItems([]); // Fallback to empty array
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const removeFromCart = async (itemId) => {
     try {
-      await axios.delete(`/api/cart/${itemId}`);
-      setCartItems(cartItems.filter(item => item._id !== itemId));
+      // Note the capitalized 'Cart' in the URL to match the backend route
+      const url = `http://localhost:5000/api/cart/${itemId}`;
+      console.log(`Attempting to remove item using: ${url}`);
+      await axios.delete(url);
+      
+      // Only update the UI after successful API call
+      setCartItems(prevItems => prevItems.filter(item => item._id !== itemId));
     } catch (error) {
       console.error('Error removing item from cart:', error);
+      setError('Failed to remove item. Please try again.');
+      
+      // Log the specific error for debugging
+      if (error.response) {
+        console.log('Error response:', error.response.status, error.response.data);
+      }
     }
   };
 
@@ -37,12 +52,29 @@ function AddCart() {
     if (newQuantity < 1) return;
     
     try {
-      await axios.put(`/api/cart/${itemId}`, { quantity: newQuantity });
-      setCartItems(cartItems.map(item => 
-        item._id === itemId ? { ...item, quantity: newQuantity } : item
-      ));
+      // First update the UI optimistically for better user experience
+      setCartItems(prevItems => 
+        prevItems.map(item => 
+          item._id === itemId ? { ...item, quantity: newQuantity } : item
+        )
+      );
+      
+      // Using the correct 'remove/:id' endpoint for PUT requests
+      const url = `http://localhost:5000/api/cart/${itemId}`;
+      console.log(`Attempting to update quantity using: ${url}`);
+      await axios.put(url, { quantity: newQuantity });
+      
     } catch (error) {
       console.error('Error updating quantity:', error);
+      setError('Failed to update quantity. Please try again.');
+      
+      // Log the specific error for debugging
+      if (error.response) {
+        console.log('Error response:', error.response.status, error.response.data);
+      }
+      
+      // Revert the optimistic update
+      fetchCartItems();
     }
   };
 
@@ -50,15 +82,38 @@ function AddCart() {
     return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2);
   };
 
+  // Debug function to help identify issues
+  const handleButtonClick = (action, itemId, quantity = null) => {
+    console.log(`Attempting ${action} for item ${itemId}${quantity !== null ? ` with quantity ${quantity}` : ''}`);
+    
+    if (action === 'remove') {
+      removeFromCart(itemId);
+    } else if (action === 'increment') {
+      updateQuantity(itemId, quantity + 1);
+    } else if (action === 'decrement') {
+      updateQuantity(itemId, quantity - 1);
+    }
+  };
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center">
+        <p>Loading cart...</p>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl w-full space-y-8">
-        <h1 className="text-3xl font-bold text-center ">CART</h1>
+        <h1 className="text-3xl font-bold text-center">CART</h1>
         
-        {isLoading ? (
-          <p className="text-center">Loading cart...</p>
-        ) : cartItems.length === 0 ? (
-          <div className="text-center ">
+        {error && (
+          <div className="text-red-500 text-center py-2">{error}</div>
+        )}
+        
+        {cartItems.length === 0 ? (
+          <div className="text-center">
             <p className="text-lg mb-8">Your cart is empty</p>
             <a 
               href="/" 
@@ -100,14 +155,15 @@ function AddCart() {
                         <div className="flex items-center border border-gray-300">
                           <button 
                             className="px-3 py-1 text-gray-600"
-                            onClick={() => updateQuantity(item._id, item.quantity - 1)}
+                            onClick={() => handleButtonClick('decrement', item._id, item.quantity)}
+                            disabled={item.quantity <= 1}
                           >
                             -
                           </button>
                           <span className="px-3 py-1 border-l border-r border-gray-300">{item.quantity}</span>
                           <button 
                             className="px-3 py-1 text-gray-600"
-                            onClick={() => updateQuantity(item._id, item.quantity + 1)}
+                            onClick={() => handleButtonClick('increment', item._id, item.quantity)}
                           >
                             +
                           </button>
@@ -118,7 +174,7 @@ function AddCart() {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                         <button 
-                          onClick={() => removeFromCart(item._id)}
+                          onClick={() => handleButtonClick('remove', item._id)}
                           className="text-red-600 hover:text-red-900"
                         >
                           Remove

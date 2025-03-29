@@ -73,7 +73,7 @@ const WhatsappLogin = () => {
     console.log("🔹 Sending OTP verification:", { phone, otp: String(otp).trim() });
 
     try {
-      const response = await fetch("http://localhost:5000/api/verifyOTP", {
+      const response = await fetch("http://localhost:5000/api/user/verifyOTP", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone, otp: String(otp).trim() }), // ✅ Ensure OTP is properly formatted

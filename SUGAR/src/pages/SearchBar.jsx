@@ -6,10 +6,10 @@ const SearchBar = () => {
   const searchInputRef = useRef(null);
   
   const popularChoices = [
-    { name: 'FOUNDATION', path: '/foundation' },
+    { name: 'FOUNDATION', path: '/FP' },
     { name: 'CONCEALER', path: '/concealer' },
     { name: 'BULLET LIPSTICKS', path: '/bullet-lipsticks' },
-    { name: 'LIPSTICK', path: '/lipstick' }
+    { name: 'LIPSTICK', path: '/new' }
   ];
   
   const recommendedProducts = [

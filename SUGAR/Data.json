@@ -1,0 +1,356 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "SUGAR Play Mega Hype Colour Changing Lip Oil",
+      "price": 199.00,
+      "description": "A revolutionary color-changing lip oil that adapts to your pH level for a personalized tint while providing deep hydration and a glossy finish.",
+      "rating": 5,
+      "image": "https://www.sugarcosmetics.com/cdn/shop/files/SUGAR-Play-Mega-Hype-Colour-Changing-Lip-Oil.jpg?v=1736171976&width=500"
+    },
+    {
+      "id": 2,
+      "name": "SUGAR Play Main Character SPF15+ Mattifying Compact",
+      "price": 599.00,
+      "description": "Be the main character of your story with this SPF15+ mattifying compact that provides seamless coverage, controls shine, and protects your skin throughout the day.",
+      "rating": 5,
+      "image": "https://www.sugarcosmetics.com/cdn/shop/files/SUGAR-Play-Main-Character-SPF15-Mattifying-Compact.jpg?v=1736172111&width=500"
+    },
+    {
+      "id": 3,
+      "name": "SUGAR Play Power Drip Lip Gloss",
+      "price": 249.00,
+      "description": "A high-impact, ultra-shiny lip gloss that delivers intense color payoff with a non-sticky formula for the ultimate power pout that truly drips with shine.",
+      "rating": 5,
+      "image": "https://cdn.shopify.com/s/files/1/0906/2558/files/547160982-01.png?v=1739184183"
+    },
+    {
+      "id": 4,
+      "name": "SUGAR Play Vibe Check Liquid Lipstick",
+      "price": 637.00,
+      "description": "Pass the vibe check with this lightweight liquid lipstick that provides vibrant color in a single swipe, featuring a comfortable matte finish that lasts all day.",
+      "rating": 5,
+      "image": "https://cdn.shopify.com/s/files/1/0906/2558/files/547496939-08.png?v=1736851960"
+    },
+    {
+      "id": 5,
+      "name": "SUGAR Play Smooth Operator Lip Crayon",
+      "price": 599.00,
+      "description": "A velvety-smooth lip crayon that glides on effortlessly for precise application, delivering rich color payoff with a comfortable, long-lasting formula.",
+      "rating": 5,
+      "image": "https://www.sugarcosmetics.com/cdn/shop/files/SUGAR-Play-Smooth-Operator-Lip-Crayon.jpg?v=1736171932&width=500"
+    },
+    {
+      "id": 6,
+      "name": "SUGAR Play High Key Chrome Eyeshadow",
+      "price": 249.00,
+      "description": "Make a high-key statement with this intense chrome eyeshadow that delivers brilliant metallic shine and pigment-rich color for eye-catching, glamorous looks.",
+      "rating": 5,
+      "image": "https://www.sugarcosmetics.com/cdn/shop/files/SUGAR-Play-High-Key-Chrome-Eyeshadow-2.jpg?v=1736509312&width=500"
+    }
+  ]
+}
+
+// {
+//   "products": [
+//     {
+//       "id": 1,
+//       "name": "Arch Arrival Brow Definer",
+//       "price": 599.00,
+//       "description": "A precise brow definer to help you shape and define your eyebrows with precision.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Arch-Arrival-Brow-Definer-2.jpg?v=1736505415&width=500"
+//     },
+//     {
+//       "id": 2,
+//       "name": "Blend The Rules Eyeshadow Palette",
+//       "price": 1299.00,
+//       "description": "A versatile eyeshadow palette with multiple shades to blend and create endless eye looks.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Blend-The-Rules-Eyeshadow-Palette-2_d176b7fa.jpg?v=1740047848&width=600"
+//     },
+//     {
+//       "id": 3,
+//       "name": "Graphic Jam 36HR Eyeliner - 01 Blackest",
+//       "price": 499.00,
+//       "description": "A long-lasting 36-hour eyeliner in the blackest black for intense, graphic eye makeup.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Graphic-Jam-36HR-Eyeliner-01-Blackest-Black.jpg?v=1736172863&width=500"
+//     },
+//     {
+//       "id": 4,
+//       "name": "Contour De Force Eyes And Face Palette",
+//       "price": 637.00,
+//       "description": "A comprehensive palette for contouring and defining both eyes and face with precision.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Contour-De-Force-Eyes-And-Face-Palette-2.jpg?v=1737456578&width=500"
+//     },
+//     {
+//       "id": 5,
+//       "name": "Kohl Of Honour Intense Kajal",
+//       "price": 245.00,
+//       "description": "An intense kajal for bold, dramatic eye definition and long-lasting wear.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Kohl-Of-Honour-Intense-Kajal-2.jpg?v=1740832197&width=500"
+//     },
+//     {
+//       "id": 6,
+//       "name": "Maximeyes Drama Magnetic Lashes & Eyeliner",
+//       "price": 599.00,
+//       "description": "A magnetic lashes and eyeliner kit for dramatic, eye-catching volume and definition.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Maximeyes-Drama-Magnetic-Lashes-Eyeliner-Kit-2.jpg?v=1743160240&width=600"
+//     },
+//     {
+//       "id": 7,
+//       "name": "Stroke Of Genius Heavy-Duty Kohl",
+//       "price": 599.00,
+//       "description": "A heavy-duty kohl pencil for intense, long-lasting eye definition and drama.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Stroke-Of-Genius-Heavy-Duty-Kohl-2.jpg?v=1736508867&width=500"
+//     },
+//     {
+//       "id": 8,
+//       "name": "Uptown Curl Lengthening Mascara - 01 Black Beauty (Black)",
+//       "price": 999.00,
+//       "description": "A lengthening mascara that provides dramatic curl and volume in classic black.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Uptown-Curl-Lengthening-Mascara-01-Black-Beauty-Black.jpg?v=1736173296&width=500"
+//     },
+//     {
+//       "id": 9,
+//       "name": "Gloss Boss 24HR Eyeliner - 01 Back In Black (Black)",
+//       "price": 1399.00,
+//       "description": "A 24-hour glossy eyeliner in intense black for a bold, long-lasting eye look.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Gloss-Boss-24HR-Eyeliner-01-Back-In-Black-Black_7837005f.jpg?v=1740047932&width=500"
+//     },
+//     {
+//       "id": 10,
+//       "name": "Arch Arrival Micro Brow Pencil",
+//       "price": 499.00,
+//       "description": "A precise micro brow pencil for creating defined, natural-looking eyebrows.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Arch-Arrival-Micro-Brow-Pencil-2.jpg?v=1736506066&width=500"
+//     },
+//     {
+//       "id": 11,
+//       "name": "Eye Told You So! Smudgeproof Eyeliner",
+//       "price": 499.00,
+//       "description": "A smudgeproof eyeliner that stays in place for a clean, precise eye look.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Eye-Told-You-So-Smudgeproof-Eyeliner-2_23db63b3.jpg?v=1740831041&width=500"
+//     },
+//     {
+//       "id": 12,
+//       "name": "Eye Warned You So!",
+//       "price": 759.00,
+//       "description": "A double matte eyeliner for intense, long-lasting eye definition.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Eye-Warned-You-So-Double-Matte-Eyeliner-2.jpg?v=1736509100&width=500"
+//     },
+//     {
+//       "id": 13,
+//       "name": "Double Date Extreme Volume Mascara Duo - 01",
+//       "price": 199.00,
+//       "description": "A duo mascara set for extreme volume and dramatic lash impact.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Double-Date-Extreme-Volume-Mascara-Duo-01-Blackjack.jpg?v=1736172684&width=500"
+//     },
+//     {
+//       "id": 14,
+//       "name": "Arch Arrival Brow Styler",
+//       "price": 599.00,
+//       "description": "A professional brow styler for perfectly shaped and groomed eyebrows.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Arch-Arrival-Brow-Styler.jpg?v=1736172056&width=500"
+//     },
+//     {
+//       "id": 15,
+//       "name": "Arrested For Overstay Waterproof Eyeliner - 01 I'll Be Black (Black)",
+//       "price": 899.00,
+//       "description": "A waterproof eyeliner that promises to stay put all day in intense black.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Arrested-For-Overstay-Waterproof-Eyeliner-01-Ill-Be-Black-Black.jpg?v=1736173407&width=500"
+//     },
+//     {
+//       "id": 16,
+//       "name": "Born To Wing Gel Eyeliner",
+//       "price": 649.00,
+//       "description": "A gel eyeliner perfect for creating precise wing and cat-eye looks.",
+//       "rating": 5,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Born-To-Wing-Gel-Eyeliner-2.jpg?v=1736505585&width=500"
+//     },
+//     {
+//       "id": 17,
+//       "name": "Blacklash Volumizing Mascara - 01 Black Up",
+//       "price": 325.00,
+//       "description": "A volumizing mascara that lifts and defines lashes for a bold black look.",
+//       "rating": 6,
+//       "image": "https://www.sugarcosmetics.com/cdn/shop/files/Blacklash-Volumizing-Mascara-01-Black-Up.jpg?v=1736172172&width=500"
+//     },
+//     {
+//       "id": 18,
+//       "name": "Bold Unfold Waterproof Mascara",
+//       "price": 325.00,
+//       "description": "A waterproof mascara that boldly defines and unfolds your lashes.",
+//       "rating": 3,
+//       "image": "https://cdn.shopify.com/s/files/1/0906/2558/files/458825126-600x450-banner-1.jpg?v=1739185206"
+//     }
+//   ]
+// }
+
+
+
+
+
+  
+// {
+//     "products": [
+//       {
+//         "id": 1,
+//         "name": "Ace of Face Dewy Foundation",
+//         "price": 799.00,
+//         "description": "A nourishing and glossy lip oil that keeps lips plumped and hydrated all day.",
+//         "rating": 5,
+//         "image": "https://cdn.shopify.com/s/files/1/0906/2558/files/721787950-f8-600x450.jpg?v=1742471357"
+//       },
+//       {
+//         "id": 2,
+//         "name": "Base Of Glory Pore Minimizing Primer",
+//         "price": 849.00,
+//         "description": "A lightweight sunscreen gel enriched with hyaluronic acid, collagen, peptides, and vitamin E for ultimate sun protection and skin hydration.",
+//         "rating": 5,
+//         "image": "https://cdn.shopify.com/s/files/1/0906/2558/files/Base-Of-Glory-Pore-Minimizing-Primer_large.jpg?v=1736173322"
+//       },
+//       {
+//         "id": 3,
+//         "name": "Brightening Concealer with Rice Water Minerals 10 ML - 15 Cappuccino (Light)",
+//         "price": 274.00,
+//         "description": "A high-shine, long-lasting lip gloss with a transfer-proof formula for all-day wear.",
+//         "rating": 5,
+//         "image": "https://cdn.shopify.com/s/files/1/0906/2558/files/Brightening-Concealer-with-Rice-Water-Minerals-10-ML-15-Cappuccino-Light-2_large.jpg?v=1736491529"
+//       },
+//       {
+//         "id": 4,
+//         "name": "Magic Wand Waterproof Concealer",
+//         "price": 637.00,
+//         "description": "A matte, transfer-proof foundation that provides full coverage and long-lasting wear.",
+//         "rating": 5,
+//         "image": "https://cdn.shopify.com/s/files/1/0906/2558/files/Magic-Wand-Waterproof-Concealer_large.jpg?v=1736173121"
+//       },
+//       {
+//         "id": 5,
+//         "name": "Drop The Base Serum Foundation",
+//         "price": 745.00,
+//         "description": "A collection of 26 matte nail polish shades that offer intense pigmentation and a smooth finish.",
+//         "rating": 5,
+//         "image": "https://www.sugarcosmetics.com/cdn/shop/files/SUGAR-Drop-A-Tint-Lip-Oil-Kit-2_19c6e18.jpg?v=1742902162&width=700https://cdn.shopify.com/s/files/1/0906/2558/files/Drop-The-Base-Serum-Foundation_large.jpg?v=1736508986"
+//       },
+//       {
+//         "id": 6,
+//         "name": "The Most Eligiblur Correcting Primer",
+//         "price": 599.00,
+//         "description": "A creamy, pigmented lip crayon that delivers bold color with a smooth, comfortable feel.",
+//         "rating": 5,
+//         "image": "https://cdn.shopify.com/s/files/1/0906/2558/files/The-Most-Eligiblur-Correcting-Primer_large.jpg?v=1736172511"
+//       },
+//       {
+//         "id": 7,
+//         "name": "Aquaholic Hydrating Foundation",
+//         "price": 599.00,
+//         "description": "A unique color-changing lip oil that reacts to the pH of your lips, delivering a custom shade.",
+//         "rating": 5,
+//         "image": "https://cdn.shopify.com/s/files/1/0906/2558/files/Aquaholic-Hydrating-Foundation_large.jpg?v=1736172251"
+//       },
+//       {
+//         "id": 8,
+//         "name": "Ace Of Face Foundation Stick",
+//         "price": 325.00,
+//         "description": "A precision brow styler that shapes and fills brows for a defined, natural look.",
+//         "rating": 5,
+//         "image": "https://cdn.shopify.com/s/files/1/0906/2558/files/Ace-Of-Face-Foundation-Stick-Kit_large.jpg?v=1743078472"
+//       },
+//       {
+//         "id": 9,
+//         "name": "Goddess Of Flawless BB Cream",
+//         "price": 925.00,
+//         "description": "A luxurious cream-to-powder foundation that delivers a flawless matte finish with lightweight comfort.",
+//         "rating": 5,
+//         "image": "https://cdn.shopify.com/s/files/1/0906/2558/files/Goddess-Of-Flawless-BB-Cream-2_large.jpg?v=1736173122"
+//       },
+//       {
+//         "id": 10,
+//         "name": "Brightening Concealer with Rice Water Minerals - 10 ML",
+//         "price": 274.00,
+//         "description": "An easy-to-use magnetic lashes kit with eyeliner for a dramatic, voluminous eye look.",
+//         "rating": 5,
+//         "image": "https://www.sugarcosmetics.com/cdn/shop/files/Brightening-Concealer-with-Rice-Water-Minerals-10-ML-6.jpg?v=1736510354&width=500"
+//       },
+//       {
+//         "id": 11,
+//         "name": "SUGAR Play High Key Chrome Eyeshadow",
+//         "price": 499.00,
+//         "description": "A high-pigment chrome eyeshadow that adds a dazzling metallic shine to your eyelids.",
+//         "rating": 5,
+//         "image": "https://www.sugarcosmetics.com/cdn/shop/files/SUGAR-Play-High-Key-Chrome-Eyeshadow-2.jpg?v=1736509312&width=500"
+//       },
+//       {
+//         "id": 12,
+//         "name": "SUGAR Play Power Drip Lip Gloss",
+//         "price": 450.00,
+//         "description": "A lightweight, non-sticky lip gloss with a hydrating formula for a juicy, plumped-up look.",
+//         "rating": 5,
+//         "image": "https://www.sugarcosmetics.com/cdn/shop/files/SUGAR-Play-Power-Drip-Lip-Gloss-2.jpg?v=1736421361&width=500"
+//       },
+//       {
+//         "id": 13,
+//         "name": "Blend The Rules Eyeshadow Palette",
+//         "price": 1199.00,
+//         "description": "A versatile eyeshadow palette with a mix of mattes and shimmers for endless eye makeup looks.",
+//         "rating": 5,
+//         "image": "https://www.sugarcosmetics.com/cdn/shop/files/Blend-The-Rules-Eyeshadow-Palette-2_d176b7fa.jpg?v=1740047848&width=700"
+//       },
+//       {
+//         "id": 14,
+//         "name": "Mousse Muse Lip Cream",
+//         "price": 599.00,
+//         "description": "A velvety-soft lip cream with a mousse-like texture for a smooth, matte finish.",
+//         "rating": 5,
+//         "image": "https://www.sugarcosmetics.com/cdn/shop/files/Mousse-Muse-Lip-Cream-2.jpg?v=1736506214&width=500"
+//       },
+//       {
+//         "id": 15,
+//         "name": "Vibe Check Liquid Lipstick",
+//         "price": 599.00,
+//         "description": "A long-lasting, high-pigment liquid lipstick with a weightless formula.",
+//         "rating": 5,
+//         "image": "https://www.sugarcosmetics.com/cdn/shop/files/SUGAR-Play-Vibe-Check-Liquid-Lipstick-2.jpg?v=1736421372&width=500"
+//       },
+//       {
+//         "id": 16,
+//         "name": "Main Character SPF15 Mattifying Compact",
+//         "price": 799.00,
+//         "description": "A mattifying compact powder with SPF 15 for an oil-free, flawless look.",
+//         "rating": 5,
+//         "image": "https://www.sugarcosmetics.com/cdn/shop/files/SUGAR-Play-Main-Character-SPF15-Mattifying-Compact.jpg?v=1736172111&width=500"
+//       },
+//       {
+//         "id": 17,
+//         "name": "Limited-Edition La La Love 18HR Liquid Lipstick",
+//         "price": 325.00,
+//         "description": "A transfer-proof, high-pigment liquid lipstick with up to 18 hours of wear.",
+//         "rating": 5,
+//         "image": "https://www.sugarcosmetics.com/cdn/shop/files/Limited-Edition-La-La-Love-18HR-Liquid-Lipstick-Kit-2-2.jpg?v=1742902080&width=500"
+//       },
+//       {
+//         "id": 18,
+//         "name": "Auto Correct Creaseless Concealer",
+//         "price": 325.00,
+//         "description": "A lightweight, full-coverage concealer that hides imperfections without settling into fine lines.",
+//         "rating": 5,
+//         "image": "https://www.sugarcosmetics.com/cdn/shop/files/Auto-Correct-Creaseless-Concealer-2.jpg?v=1736421247&width=500"
+//       }
+//     ]
+//   }
+  
