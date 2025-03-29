@@ -148,7 +148,7 @@ const Navbar = () => {
           <button className="text-gray-800 hover:text-pink-500 transition duration-200">
             <SearchBar/>
           </button>
-          <Link  className="text-gray-800 hover:text-pink-500 transition duration-200">
+          <Link className="text-gray-800 hover:text-pink-500 transition duration-200">
             <WhatsappLogin/>
           </Link>
           <Link to="/cart" className="text-gray-800 hover:text-pink-500 transition duration-200">

@@ -179,9 +179,6 @@
 
 
 
-
-
-
 import React, { useState, useEffect } from "react";
 import { X, User } from "lucide-react";
 
@@ -249,6 +246,7 @@ const WhatsappLogin = () => {
       setError(error.message || "Failed to send OTP. Please try again.");
     }
   };
+
   const verifyOtp = async () => {
     if (!otp || otp.length !== 6) {
       setError("Enter a valid 6-digit OTP");
@@ -260,8 +258,6 @@ const WhatsappLogin = () => {
       return;
     }
     
-    console.log("📨 Sending Verify OTP Request", { phoneNumber, otp });
-    
     try {
       const response = await fetch("https://sugar-project.onrender.com/auth/verify-otp", {
         method: "POST",
@@ -270,8 +266,6 @@ const WhatsappLogin = () => {
       });
   
       const data = await response.json();
-      console.log("✅ Server Response:", data);
-      
       if (!response.ok) {
         throw new Error(data.message || "OTP verification failed");
       }
@@ -289,29 +283,27 @@ const WhatsappLogin = () => {
     }
   };
 
-
-  const handleResendOtp = () => {
-    setOtp("");
-    setTimer(30);
-    setIsResendDisabled(true);
-    sendOtp();
-  };
-
   return (
     <div className="font-sans">
-      <button onClick={openModal} className="text-gray-800 hover:text-pink-500 transition duration-200">
+      <button onClick={openModal} className="text-gray-800 hover:text-pink-500 transition duration-200 cursor-pointer">
         <User size={25} />
       </button>
 
       {isOpen && (
         <div className="fixed inset-0 bg-opacity-50 flex items-center justify-center z-50">
           <div className="relative bg-white rounded-lg max-w-lg w-full p-10 shadow-lg">
-            <button onClick={closeModal} className="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+            <button onClick={closeModal} className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 cursor-pointer">
               <X size={28} />
             </button>
 
             {!isOtpSent ? (
               <>
+                <div className="relative h-48 bg-gradient-to-r from-pink-400 to-purple-400 flex items-center justify-center">
+                  <div className="text-center z-10">
+                    <h1 className="text-4xl font-bold text-white tracking-wide">SUGAR</h1>
+                    <p className="text-white mt-2 text-lg font-light">Rule the world, one look at a time ;)</p>
+                  </div>
+                </div>
                 <div className="p-6">
                   <label className="block text-gray-700 font-semibold mb-2">Phone Number</label>
                   <input
@@ -322,37 +314,33 @@ const WhatsappLogin = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg"
                   />
                   {error && <p className="text-red-500 text-sm mb-2">{error}</p>}
-                  <button onClick={sendOtp} className="w-full bg-pink-400 text-white py-3 rounded-lg hover:bg-purple-400">
+                  <button onClick={sendOtp} className="w-full bg-pink-400 text-white py-3 rounded-lg hover:bg-purple-400 mt-4 cursor-pointer">
                     WhatsApp Login
                   </button>
                 </div>
               </>
             ) : (
               <>
-                <div className="p-6">
-                  <h2 className="text-2xl font-semibold text-gray-800 mb-4">Enter OTP</h2>
-                  <input
-                    type="text"
-                    placeholder="Enter 6-digit OTP"
-                    value={otp}
-                    onChange={(e) => setOtp(e.target.value)}
-                    className="w-full border border-gray-300 rounded-md p-3 text-lg mb-2"
-                  />
-                  <p className="text-gray-600 text-sm mb-2">OTP expires in: {timer}s</p>
-                  {error && <p className="text-red-500 text-sm mb-2">{error}</p>}
-                  <button onClick={verifyOtp} className="w-full bg-pink-400 text-white rounded-md p-3 mt-2 hover:bg-purple-400">
-                    Verify OTP
-                  </button>
-                  <button
-                    onClick={handleResendOtp}
-                    disabled={isResendDisabled}
-                    className={`w-full text-white rounded-md p-3 mt-2 ${
-                      isResendDisabled ? "bg-gray-400 opacity-50" : "bg-pink-400 hover:bg-purple-400"
-                    }`}
-                  >
-                    Resend OTP
-                  </button>
-                </div>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4">Enter OTP</h2>
+                <input
+                  type="text"
+                  placeholder="Enter 6-digit OTP"
+                  value={otp}
+                  onChange={(e) => setOtp(e.target.value)}
+                  className="w-full border border-gray-300 rounded-md p-3 text-lg mb-2"
+                />
+                <p className="text-gray-600 text-sm mb-2">OTP expires in: {timer}s</p>
+                {error && <p className="text-red-500 text-sm mb-2">{error}</p>}
+                <button onClick={verifyOtp} className="w-full bg-pink-400 text-white rounded-md p-3 mt-2 hover:bg-purple-400 cursor-pointer">
+                  Verify OTP
+                </button>
+                <button
+                  onClick={sendOtp}
+                  disabled={isResendDisabled}
+                  className={`w-full text-white rounded-md p-3 mt-2 ${isResendDisabled ? "bg-gray-400 opacity-50" : "bg-pink-400 hover:bg-purple-400 cursor-pointer"}`}
+                >
+                  Resend OTP
+                </button>
               </>
             )}
           </div>
