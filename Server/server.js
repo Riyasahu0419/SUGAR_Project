@@ -27,7 +27,7 @@ server.use((req, res, next) => {
       console.log('Request from origin:', origin); 
       const allowedOrigins = [
         "http://localhost:5173", 
-        "https://sugar-project.vercel.app/", 
+        "https://sugar-project.vercel.app", 
       ];
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
