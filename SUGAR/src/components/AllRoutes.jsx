@@ -13,6 +13,7 @@ import Gift from "../pages/NavBrands/Gift";
 import Play from "../pages/NavBrands/Play";
 import Pop from "../pages/NavBrands/Pop/PopPage";
 import Checkout from "../pages/CheckOut";
+// import WhatsappLogin from "../pages/WhatsappLogin";
 
 function AllRoutes(){
     return(
@@ -32,6 +33,8 @@ function AllRoutes(){
             <Route path="/sugar-pop" element={<Pop/>}/>
             <Route path="/play" element={<Play/>}/>
             <Route path="/checkout" element={<Checkout/>}/>
+            {/* <Route path="/login" element={<WhatsappLogin/>}/> */}
+
 
         </Routes>
        

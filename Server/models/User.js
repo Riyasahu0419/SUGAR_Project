@@ -1,8 +1,8 @@
-const mongoose=require("mongoose")
-const UserSchema = new mongoose.Schema({
-    phone: { type: String, unique: true, required: true },
-    verified: { type: Boolean, default: false },
-},{timestamps:true})    
+const mongoose = require("mongoose");
 
-const UserModel=mongoose.model('User',UserSchema)
-module.exports=UserModel;
+const UserSchema = new mongoose.Schema({
+  phone: { type: String, required: true, unique: true },
+  isVerified: { type: Boolean, default: false },
+});
+
+module.exports = mongoose.model("User", UserSchema);
