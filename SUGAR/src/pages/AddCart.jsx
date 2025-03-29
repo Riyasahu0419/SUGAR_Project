@@ -15,7 +15,7 @@ function AddCart() {
   const fetchCartItems = async () => {
     try {
       setIsLoading(true);
-      const response = await axios.get('http://localhost:5000/api/cart');
+      const response = await axios.get('https://sugar-project.onrender.com/api/cart');
       const data = Array.isArray(response.data) ? response.data : [];
       setCartItems(data);
       setError(null);
@@ -31,7 +31,7 @@ function AddCart() {
   const removeFromCart = async (itemId) => {
     try {
       // Note the capitalized 'Cart' in the URL to match the backend route
-      const url = `http://localhost:5000/api/cart/${itemId}`;
+      const url = `https://sugar-project.onrender.com/api/cart/${itemId}`;
       console.log(`Attempting to remove item using: ${url}`);
       await axios.delete(url);
       
@@ -60,7 +60,7 @@ function AddCart() {
       );
       
       // Using the correct 'remove/:id' endpoint for PUT requests
-      const url = `http://localhost:5000/api/cart/${itemId}`;
+      const url = `https://sugar-project.onrender.com/api/cart/${itemId}`;
       console.log(`Attempting to update quantity using: ${url}`);
       await axios.put(url, { quantity: newQuantity });
       

@@ -231,7 +231,7 @@ const WhatsappLogin = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/auth/send-otp", {
+      const response = await fetch("https://sugar-project.onrender.com/auth/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phoneNumber: formattedPhone }),
@@ -263,7 +263,7 @@ const WhatsappLogin = () => {
     console.log("📨 Sending Verify OTP Request", { phoneNumber, otp });
     
     try {
-      const response = await fetch("http://localhost:5000/auth/verify-otp", {
+      const response = await fetch("https://sugar-project.onrender.com/auth/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone: phoneNumber, otp }),

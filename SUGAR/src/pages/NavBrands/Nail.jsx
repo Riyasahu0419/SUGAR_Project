@@ -12,7 +12,7 @@ const Nail = () => {
    useEffect(() => {
      const fetchProducts = async () => {
        try {
-         const response = await fetch('http://localhost:5000/api/nail/Nail');
+         const response = await fetch('https://sugar-project.onrender.com/api/nail/Nail');
          if (!response.ok) throw new Error('Failed to fetch products');
          const data = await response.json();
  
@@ -54,7 +54,7 @@ const Nail = () => {
        };
  
        // Use the same base URL as your product API
-       await axios.post('http://localhost:5000/api/cart/add', cartItem);
+       await axios.post('https://sugar-project.onrender.com/api/cart/add', cartItem);
        
        // Show success message
        alert(`${product.name} added to cart!`);
