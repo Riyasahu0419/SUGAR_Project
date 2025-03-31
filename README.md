@@ -26,7 +26,7 @@ SUGAR is a web application built with React, Node.js, and Tailwind CSS. The proj
 - **Authentication**: Custom phone number verification
 
 ## Project Structure
-
+```
 SUGAR_Project/
 ├── Server/
 │   ├── config/
@@ -79,7 +79,7 @@ SUGAR_Project/
 ├── README.md
 └── tailwind.config.js
 
-
+```
 ## Installation
 
 1. Clone the repository:
@@ -98,7 +98,7 @@ npm install
 cd ..
 ```
 
-### Set up environment variables:
+## Set up environment variables:
 ```
 MONGO_URL=mongodb+srv://username:password@cluster0.sample.mongodb.net/database_name
 PORT=5000
@@ -110,17 +110,17 @@ TWILIO_SERVICE_SID=VAxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 ## Start the development server:
 
-# Start client
+## Start client
 ```
 npm run dev
 ```
-# Start server (in a separate terminal)
+## Start server (in a separate terminal)
 ```
 cd Server
 npm start
 ```
 
-# Usage
+## Usage
 -After starting the application, you can access the UI through your browser at http://localhost:3000.
 ### The application allows users to:
 -Log in using their phone number
@@ -128,15 +128,15 @@ npm start
 -View product details
 -Interact with various UI components like carousels
 
-# API Endpoints
-## Authentication
+## API Endpoints
+### Authentication
 ```
 
 POST /api/auth/login - Login with phone number
 POST /api/auth/verify - Verify OTP
 
 ```
-# User
+## User
 
 ## Products
 ```
@@ -150,7 +150,7 @@ GET /api/cart - Get user's cart
 POST /api/cart/add - Add item to cart
 DELETE /api/cart/:itemId - Remove item from cart
 ```
-# Cosmetic Categories
+## Cosmetic Categories
 ```
 GET /api/eye - Get eye products
 GET /api/lip - Get lip products
